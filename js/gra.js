@@ -1,14 +1,18 @@
 let otwartePrezenty = 0;
 
 function gra(x) {
-  let audioGood = new Audio(`../audio/madeinohio.mp3`);
-  let audioBad = new Audio(`../audio/ohioringtone.mp3`);
+  let audioGood = new Audio(
+    `https://d1m0n-js.github.io/ChristmasPage/audio/madeinohio.mp3`
+  );
+  let audioBad = new Audio(
+    `https://d1m0n-js.github.io/ChristmasPage/audio/ohioringtone.mp3`
+  );
   audioGood.preload;
   audioBad.preload;
   let container = document.getElementById("container");
   let container2 = document.getElementById("container2");
   x.classList.toggle("disabled");
-  x.src = "../img/prezent-open.png"; // klikniety prezent sie otwiera dzięki atrybutowi this, który przypisuje ten skrypt tylko kliknietemu prezentowi
+  x.src = "https://d1m0n-js.github.io/ChristmasPage/img/prezent-open.png"; // klikniety prezent sie otwiera dzięki atrybutowi this, który przypisuje ten skrypt tylko kliknietemu prezentowi
   otwartePrezenty++;
   if (otwartePrezenty == 7) {
     let rng = Math.random() * 100; // losuje liczby od 0 do 1 mnożąc wynik przez to dzieki czemu otrzymuje wynik od 0 do 100
@@ -24,7 +28,7 @@ function gra(x) {
       document.body.style.backgroundColor = "#c62121";
       text1.appendChild(iN);
       text2.appendChild(ohio);
-      img.src = "../img/papis.png";
+      img.src = "https://d1m0n-js.github.io/ChristmasPage/img/papis.png";
       img.classList.toggle("papis");
       container.appendChild(img);
       text.appendChild(made);
@@ -71,5 +75,3 @@ function gra(x) {
     }
   }
 }
-
-

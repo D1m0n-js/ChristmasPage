@@ -1,4 +1,6 @@
-let audio = new Audio("../audio/jinglebell.mp3");
+let audio = new Audio(
+  "https://d1m0n-js.github.io/ChristmasPage/audio/jinglebell.mp3"
+);
 audio.preload;
 
 function odliczanie() {
