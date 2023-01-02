@@ -1,0 +1,25 @@
+img {
+  height: 200px;
+  width: 260px;
+}
+
+#container,
+#container2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.papis {
+  width: 500px;
+  height: 500px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.disabled {
+  pointer-events: none;
+}

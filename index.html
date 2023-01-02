@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/presents.js"></script>
+    <script src="js/snow.js"></script>
+    <script src="js/odliczanie.js"></script>
+    <script defer src="js/page.js"></script>
+    <title>Idą święta!</title>
+  </head>
+  <body onscroll="ifScroll()" onload="odliczanie()">
+    <header>
+      <h1>Szymon Rogulski</h1>
+    </header>
+    <div id="snow"></div>
+    <div class="main-container">
+      <img onclick="redirect()" id="prezent" src="img/prezent.png" alt="" />
+      <div id="container-left">
+        <h1>Ida swieta!</h1>
+      </div>
+      <div id="container-right">
+        <h1>Łap prezenty!</h1>
+      </div>
+    </div>
+    <h1 id="simon">Simon mówi, odbierz swój prezent!</h1>
+    <a href="#swieta"><button id="explore">Zwiedź więcej!</button></a>
+    <img id="" src="img/choineczka.jpg" alt="" />
+    <button id="lowcaprezentow" onclick="play()">Łowca prezentów</button>
+    <div id="odliczanie2">
+      <span id="odliczanie">Do świąt zostalo już tylko:</span>
+      <h1>Top 5 filmów świątecznych</h1>
+      <a target="_blank" href="https://youtu.be/4R8qRj3OuiY?t=244">Numer 1</a>
+      <a target="_blank" href="https://youtu.be/VZ_EnxuumLs?t=7">Numer 2</a>
+      <a
+        id="swieta"
+        target="_blank"
+        href="https://www.youtube.com/watch?v=jZMzj1kqJro"
+        >Numer 3</a
+      >
+      <a target="_blank" href="https://youtu.be/qga139XArlY?t=4">Numer 4</a>
+      <a target="_blank" href="https://www.youtube.com/watch?v=fooUF2eYSTY"
+        >Numer 5</a
+      >
+    </div>
+  </body>
+</html>

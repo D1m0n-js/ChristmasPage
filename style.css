@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  --linear-gradient: linear-gradient(to right, white 50%, #c62121 50%);
+  --linear-gradient-left: linear-gradient(to left, white 50%, #c62121 50%);
+}
+
+body {
+  background-color: hsl(152, 87%, 59%);
+  overflow-x: hidden;
+}
+header {
+  background: var(--linear-gradient-left);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.hiddenL {
+  transform: translateX(-100%);
+  transition: all 1.2s;
+}
+.hiddenR {
+  transform: translateX(100%);
+  transition: all 1.2s;
+}
+
+.show {
+  transition: all 1.2s;
+}
+
+header > h1 {
+  background: var(--linear-gradient);
+  background-clip: text;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.main-container {
+  text-align: center;
+  display: flex;
+  width: auto;
+  min-height: 100vh;
+  transition: all 500ms;
+}
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+#prezent {
+  height: 200px;
+  width: auto;
+  pointer-events: fill;
+  cursor: pointer;
+}
+#simon {
+  position: absolute;
+  z-index: 100;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background: var(--linear-gradient);
+  background-clip: text;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#container-left {
+  background-color: #c62121;
+  width: 50%;
+  color: white;
+}
+#container-right {
+  color: #c62121;
+  background-color: white;
+  width: 50%;
+}
+#prezentWylosowany {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+}
+
+#explore {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  font-family: "Orbitron";
+  font-size: 15px;
+  height: 3.5rem;
+  letter-spacing: 2px;
+  padding: 10px 5em;
+  border-radius: 10px;
+  border: 0px;
+  background: linear-gradient(90deg, #e95e4e, #e99c4e);
+  background-size: 30em 1em;
+  color: #ffe6a7;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+button:hover {
+  background-position: right 20em;
+  transition: all 300ms ease-in-out;
+}
+#prezent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#lowcaprezentow {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+#odliczanie2 {
+  display: grid;
+  padding: 1.5rem;
+  background-image: url(./img/bombka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 48px;
+  text-align: center;
+  color: hsl(263, 100%, 50%);
+  text-shadow: 10px black;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(263, 100%, 50%);
+  margin: 2%;
+  text-shadow: var(--text-shadow);
+}
+
+#prezentWylosowany {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+  background-image: url(./img/363595.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
